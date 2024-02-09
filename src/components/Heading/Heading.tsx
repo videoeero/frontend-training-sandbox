@@ -8,7 +8,8 @@ type Props = {
 };
 
 export const Heading = ({ children, headingLevel = 2 }: Props) => {
-  const TagToRender: any = `h${headingLevel}`;
+  const TagToRender = `h${headingLevel}` as keyof JSX.IntrinsicElements;
+
   return (
     <div className="heading">
       {headingLevel ? (
