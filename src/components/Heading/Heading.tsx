@@ -4,10 +4,10 @@ type AcceptedHeadings = 1 | 2 | 3 | 4 | 5 | 6;
 
 type Props = {
   children: string;
-  headingLevel?: AcceptedHeadings;
+  headingLevel: AcceptedHeadings;
 };
 
-export const Heading = ({ children, headingLevel = 2 }: Props) => {
+export default function Heading({ children, headingLevel = 2 }: Props) {
   const TagToRender = `h${headingLevel}` as keyof JSX.IntrinsicElements;
 
   return (
@@ -19,4 +19,4 @@ export const Heading = ({ children, headingLevel = 2 }: Props) => {
       )}
     </div>
   );
-};
+}
