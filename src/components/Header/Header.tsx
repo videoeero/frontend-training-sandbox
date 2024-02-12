@@ -16,6 +16,10 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
+      <div
+        className={styles.header__intensifier}
+        style={{ opacity: 0.1 * intensityLevel }}
+      />
       <div className={styles.header__left}>
         <Heading size="lg" level={1}>
           Welcome to Mess Around App{"!".repeat(intensityLevel)}
