@@ -1,22 +1,21 @@
 import React from "react";
+import "./Heading.scss";
 
 type AcceptedHeadings = 1 | 2 | 3 | 4 | 5 | 6;
+type AcceptedSizes = "sm" | "md" | "lg";
 
 type Props = {
-  children: string;
-  headingLevel: AcceptedHeadings;
+  children: React.ReactNode;
+  level?: AcceptedHeadings;
+  size?: AcceptedSizes;
 };
 
-export default function Heading({ children, headingLevel = 2 }: Props) {
-  const TagToRender = `h${headingLevel}` as keyof JSX.IntrinsicElements;
+export default function Heading({ children, level = 2, size = "md" }: Props) {
+  const TagToRender = `h${level}` as keyof JSX.IntrinsicElements;
 
-  return (
-    <div className="heading">
-      {headingLevel ? (
-        <TagToRender>{children}</TagToRender>
-      ) : (
-        <h2>{children}</h2>
-      )}
-    </div>
+  return level ? (
+    <TagToRender className={`heading heading__${size}`}>{children}</TagToRender>
+  ) : (
+    <h2>{children}</h2>
   );
 }

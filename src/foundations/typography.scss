@@ -1,0 +1,18 @@
+@use "./spacing.scss" as spacing;
+
+$body-text-regular: spacing.$sm;
+$heading-sm: spacing.$md;
+$heading-md: spacing.$lg;
+$heading-lg: spacing.$xl;
+
+@mixin body-text {
+  font-size: $body-text-regular;
+  padding: 0;
+}
+
+@mixin heading {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+}

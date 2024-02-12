@@ -1,0 +1,30 @@
+@use "../../foundations/spacing.scss" as spacing;
+@use "../../foundations/colors.scss" as colors;
+
+.button {
+  border: none;
+  color: colors.$light;
+  font-size: spacing.$sm;
+  padding: spacing.$xs spacing.$sm;
+  transition: all 0.2s;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &__primary {
+    background-color: colors.$primary;
+
+    &:hover {
+      background-color: colors.$secondary;
+    }
+  }
+
+  &__secondary {
+    background-color: colors.$secondary;
+
+    &:hover {
+      background-color: colors.$primary;
+    }
+  }
+}

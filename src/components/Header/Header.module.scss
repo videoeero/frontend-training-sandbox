@@ -4,8 +4,15 @@
   align-items: center;
   justify-content: space-between;
 
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__image {
-    width: 30rem;
-    height: auto;
+    height: 25rem;
+    width: auto;
   }
 }
