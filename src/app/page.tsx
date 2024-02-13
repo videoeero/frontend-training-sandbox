@@ -7,6 +7,7 @@ import { useState } from "react";
 import Card from "@/components/Card/Card";
 import styles from "./page.module.scss";
 import cardData from "./card_data";
+import { Test } from "@/components/Test/Test";
 
 export default function Home() {
   const [cardsVisibility, setCardsVisibility] = useState<boolean>(false);
@@ -20,6 +21,9 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <Heading size="lg">Main Content</Heading>
+
+        <Test />
+
         <Button handleClick={toggleCards} variant="primary">
           Toggle Movie Cards
         </Button>
