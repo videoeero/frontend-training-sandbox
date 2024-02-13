@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-concentric-order"
+  ],
+  "rules": {
+    "order/properties-alphabetical-order": null,
+    "color-no-hex": true,
+    "color-hex-length": "long",
+    "unit-disallowed-list": ["px", "rem"],
+    "max-nesting-depth": 4,
+    "declaration-no-important": true,
+    "selector-max-class": 2,
+    "no-descending-specificity": true
+  }
+}
