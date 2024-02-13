@@ -1,13 +1,13 @@
 "use client";
 
-import Header from "@/components/Header/Header";
-import Button from "@/components/Button/Button";
-import Heading from "@/components/Heading/Heading";
 import { useState } from "react";
-import Card from "@/components/Card/Card";
-import styles from "./page.module.scss";
+import Header from "../components/Header/Header";
+import Button from "../components/Button/Button";
+import Heading from "../components/Heading/Heading";
+import Card from "../components/Card/Card";
 import cardData from "./card_data";
-import { Test } from "@/components/Test/Test";
+import Test from "../components/Test/Test";
+import styles from "./page.module.scss";
 
 export default function Home() {
   const [cardsVisibility, setCardsVisibility] = useState<boolean>(false);
