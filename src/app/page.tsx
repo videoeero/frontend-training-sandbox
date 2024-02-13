@@ -28,7 +28,7 @@ export default function Home() {
           Toggle Movie Cards
         </Button>
         {cardsVisibility && (
-          <div className={styles.card_container}>
+          <div className={styles.container}>
             {cardData.map((card) => (
               <Card key={`card_${card.id}`} data={card} />
             ))}

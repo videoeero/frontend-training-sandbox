@@ -6,18 +6,18 @@ $desktop: 75em;
   @if $breakpoint == mobile {
     @media only screen and (max-width: $mobile) {
       @content;
-    } //600px
+    } // 600px
   }
 
   @if $breakpoint == tablet {
     @media only screen and (max-width: $tablet) {
       @content;
-    } //900px
+    } // 900px
   }
 
   @if $breakpoint == desktop {
     @media only screen and (max-width: $desktop) {
       @content;
-    } //1200px
+    } // 1200px
   }
 }

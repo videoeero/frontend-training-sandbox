@@ -6,13 +6,13 @@ $heading-md: spacing.$lg;
 $heading-lg: spacing.$xl;
 
 @mixin body-text {
-  font-size: $body-text-regular;
   padding: 0;
+  font-size: $body-text-regular;
 }
 
 @mixin heading {
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 }

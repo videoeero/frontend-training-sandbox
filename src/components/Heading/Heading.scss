@@ -1,9 +1,11 @@
-@use "../../foundations/typography.scss" as typography;
-@use "../../foundations/spacing.scss" as spacing;
+@use "../../styles/typography.scss" as typography;
+@use "../../styles/spacing.scss" as spacing;
 
 .heading {
   @include typography.heading;
+
   margin-bottom: spacing.$xs;
+
   &__sm {
     font-size: typography.$heading-sm;
   }

@@ -1,5 +1,5 @@
-@use "../foundations/breakpoints.scss" as breakpoints;
-@use "../foundations/spacing.scss" as spacing;
+@use "../styles/breakpoints.scss" as breakpoints;
+@use "../styles/spacing.scss" as spacing;
 
 .main {
   display: flex;
@@ -9,19 +9,18 @@
   min-height: 100vh;
 }
 
-.card_container {
+.container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: spacing.$lg;
-  grid-row-gap: spacing.$lg;
+  grid-gap: spacing.$lg spacing.$lg;
 
   @include breakpoints.respond(tablet) {
-    grid-column-gap: spacing.$md;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: spacing.$md;
   }
 
   @include breakpoints.respond(mobile) {
-    grid-column-gap: spacing.$sm;
     grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: spacing.$sm;
   }
 }

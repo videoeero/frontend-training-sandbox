@@ -1,12 +1,12 @@
-@use "../../foundations/spacing.scss" as spacing;
-@use "../../foundations/colors.scss" as colors;
+@use "../../styles/spacing.scss" as spacing;
+@use "../../styles/colors.scss" as colors;
 
 .button {
+  transition: all 0.2s;
   border: none;
+  padding: spacing.$xs spacing.$sm;
   color: colors.$light;
   font-size: spacing.$sm;
-  padding: spacing.$xs spacing.$sm;
-  transition: all 0.2s;
 
   &:active {
     transform: scale(0.95);

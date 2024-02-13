@@ -1,17 +1,17 @@
-@use "../foundations/colors.scss" as colors;
-@use "../foundations/spacing.scss" as spacing;
+@use "../styles/colors.scss" as colors;
+@use "../styles/spacing.scss" as spacing;
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 html,
 body {
+  background-color: colors.$light;
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: colors.$light;
 }
 
 .margin-bottom {

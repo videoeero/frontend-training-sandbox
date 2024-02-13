@@ -5,10 +5,11 @@
     "stylelint-config-concentric-order"
   ],
   "rules": {
+    "declaration-property-value-disallowed-list": null,
     "order/properties-alphabetical-order": null,
     "color-no-hex": true,
     "color-hex-length": "long",
-    "unit-disallowed-list": ["px", "rem"],
+    "unit-disallowed-list": ["px"],
     "max-nesting-depth": 4,
     "declaration-no-important": true,
     "selector-max-class": 2,

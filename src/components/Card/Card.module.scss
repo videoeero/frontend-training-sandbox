@@ -1,16 +1,17 @@
-@use "../../foundations/colors.scss" as colors;
-@use "../../foundations/spacing.scss" as spacing;
+@use "../../styles/colors.scss" as colors;
+@use "../../styles/spacing.scss" as spacing;
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: spacing.$md;
   background-color: colors.$accent-1;
+  padding: spacing.$md;
 
   &__list {
     padding-left: spacing.$sm;
+
     &__item {
       &:not(:last-of-type) {
         margin-bottom: spacing.$xs;
