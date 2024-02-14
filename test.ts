@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-console */
 
+console.log("Well done! I was printed!");
+
 /**
  * To comment / uncomment blocks, first select it and with keyboard press CMD + SHIFT + 7
  */
